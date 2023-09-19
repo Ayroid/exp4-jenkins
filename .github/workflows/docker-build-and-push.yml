@@ -20,5 +20,5 @@ jobs:
 
     - name: Build and Push Docker Image
       run: |
-        docker build -t ${{ secrets.DOCKER_USERNAME }}/cicd-exp4 .
-        docker push ${{ secrets.DOCKER_USERNAME }}/cicd-exp4
+        docker build -t ${{ secrets.DOCKER_USERNAME }}/cicd-exp4:v1 .
+        docker push ${{ secrets.DOCKER_USERNAME }}/cicd-exp4:v1
